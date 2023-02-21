@@ -5,9 +5,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <a href="index.html" id="logoLink"> <img src="images/Logo.png" alt="logo"> </a>
+        <hr/>
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html">STRONA GŁÓWNA</a>
+            <a href="index.html">O NAS</a>
+            <a href="index.html">USŁUGI</a>
+            <a href="index.html">KONTAKT</a>
+            <a href="javascript:void(0);" class="mobMenuIcon" onclick="myFunction()"><i class="fas fa-bars"></i></a>
+        </nav>
+    </header>
     
+    <section class="baner">
+        <div class="container">
+            <h1>Front End Development</h1>
+            <h3>Nasze stronkki są the best</h3>
+            <a href="#" class="btn">Read more</a>
+        </div>    
+    </section>
+    
+    <main>
+        <div class="container">
+            <section id="mainColumn">
+                <article class="mainItem">
+                    <div class="buttons">
+                        <a href="#" class="btn">LINK PRZYCISK</a>
+                        <a href="#" class="btn">LINK PRZYCISK</a>
+                    </div>
+                    <a href="#"><img src="images/des1.jpg" class="artThumbnail" alt=""></a>
+                    <div class="entry-meta">
+                        &mdash; By <a href="#">admin</a> <i class="fa-solid fa-circle fa-my-class"></i> 31.07.2021 <i class="fa-solid fa-circle fa-my-class"></i><a href="#"> 1 comment</a>
+                    </div>
+                    <h2><a href="#">Cabo Polonio: Uruguay’s Village of Miracles</a></h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem rem quod molestiae adipisci animi reprehenderit veniam architecto dicta explicabo aut, dolorem nam commodi natus harum. Incidunt quod inventore aut quae!</p>
+                    <div class="entry-footer">
+                        <a href="#" class="btn">Read more</a>
+                        <div class="share-icons">
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="mainItem">
+                    <div class="buttons">
+                        <a href="#" class="btn">LINK PRZYCISK</a>
+                        <a href="#" class="btn">LINK PRZYCISK</a>
+                    </div>
+                    <a href="#"><img src="images/des2.jpg" class="artThumbnail" alt=""></a>
+                    <div class="entry-meta">
+                        &mdash; By <a href="#">admin</a> <i class="fa-solid fa-circle fa-my-class"></i> 31.07.2021 <i class="fa-solid fa-circle fa-my-class"></i><a href="#"> 1 comment</a>
+                    </div>
+                    <h2><a href="#">Cabo Polonio: Uruguay’s Village of Miracles</a></h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem rem quod molestiae adipisci animi reprehenderit veniam architecto dicta explicabo aut, dolorem nam commodi natus harum. Incidunt quod inventore aut quae!</p>
+                    <div class="entry-footer">
+                        <a href="#" class="btn">Read more</a>
+                        <div class="share-icons">
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="mainAside">
+                <div class="mainItem cytat">
+                    <p>"The world is a book and those who do not travel read only one page."</p>
+                    <p>Augustine of Hippo</p>
+                </div>
+                <div class="mainItem tags">
+                    <h4>TAGS</h4>
+                    <a href="#">EXOTICS</a>
+                    <a href="#">NATURE</a>
+                    <a href="#">PHOTOS</a>
+                    <a href="#">WORLD</a>
+                    <a href="#">WORLD</a>
+                </div>
+                <div class="mainItem recentComments">
+                    <h4>COMMENTS</h4>
+                    <ul>
+                        <li><span>Steve Davis</span> on <a href="#">Going deep into the ...</a></li>
+                        <li><span>Steve Davis</span> on <a href="#">Going deep into the ...</a></li>
+                        <li><span>Steve Davis</span> on <a href="#">Going deep into the ...</a></li>
+                        <li><span>Steve Davis</span> on <a href="#">Going deep into the ...</a></li>
+                    </ul>
+                </div>
+                <div class="mainItem categories">
+                    <h4>CATEGORIES</h4>
+                    <ul>
+                        <li><a href="#">Exotic Destinations</a></li>
+                        <li><a href="#">Exotic Destinations</a></li>
+                        <li><a href="#">Exotic Destinations</a></li>
+                        <li><a href="#">Exotic Destinations</a></li>
+                        <li><a href="#">Exotic Destinations</a></li>
+                        <li><a href="#">Exotic Destinations</a></li>
+                        <li><a href="#">Exotic Destinations</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+
+    <script>
+        function myFunction(){
+            var x = document.getElementById("myTopnav");
+            if(x.className ==="topnav"){
+                x.className += " responsive";
+            }else{
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 </html>

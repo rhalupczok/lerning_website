@@ -1,0 +1,338 @@
+:root{
+    --maincolor:#aa4444;
+    --backgroundcolor:rgb(226,226,226);
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+#logoLink {
+    display: block;
+    text-align: center;
+}
+
+header > hr {
+    width: 80%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 1rem 1.6rem;
+    background-color: var(--maincolor);
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    display: block;
+    max-width: fit-content;
+    border: 2px solid var(--maincolor);
+}
+
+.btn:hover {
+    background: none;
+    border: 2px solid var(--maincolor);
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
+}
+
+/* -------- Menu ---------- */
+.topnav {
+    text-align: center;
+}
+
+.topnav a {
+    display: inline-block;
+    color: var(--maincolor);
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.topnav a:hover {
+    background-color: var(--maincolor);
+    color: white;
+}
+
+.topnav .mobMenuIcon {
+    display: none;
+}
+/* -------- /Menu ---------- */
+
+/* -------- Banner ---------- */
+.baner {
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url(images/tlo.jpg) no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.baner .container {
+    padding: 1rem;
+}
+
+
+.baner h1 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.baner h3 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+/* -------- /Banner ---------- */
+
+/* --------- Main --------- */
+
+main {
+    background: var(--backgroundcolor);
+}
+
+main .container {
+    display: flex;
+}
+
+main .container #mainColumn {
+    flex: 70vw;
+}
+
+main .container #mainAside {
+    flex: 30vw;
+}
+
+.mainItem{
+    background: white;
+    padding: 1rem;
+    margin: 1rem 0.5rem;
+}
+
+.fa-my-class {
+    font-size: 0.3rem;
+    position: relative;
+    bottom: 0.2rem;
+    padding: 0 0.2rem;
+}
+
+
+/* --------- /Main --------- */
+
+/* -------- Article ---------- */
+.artThumbnail {
+    display: block;
+    width: 100%;
+}
+
+.entry-meta {
+    padding: 1rem 0;
+}
+
+.entry-meta a {
+    color: var(--maincolor);
+    text-decoration: none;
+}
+
+article h2 a {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 32px;
+    /* interlinia */
+    line-height: 1.4; 
+    font-family: Noto serif;
+    text-decoration: none;
+    color: var(--maincolor);
+}
+
+article p {
+    color: #292727;
+}
+
+.entry-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+.share-icons {
+    margin-left: 15px;
+}
+
+.share-icons a {
+    color: #ccc;
+    font-size: 1.2rem;
+    letter-spacing: 1rem;
+
+}
+
+.mainItem{
+    position: relative;
+}
+
+.buttons{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    display: flex;
+    column-gap: 2rem;
+
+}
+/* -------- /Article ---------- */
+
+/* -------- Widgets ---------- */
+.cytat{
+    background-color: var(--maincolor);
+    color: white;
+    text-align: center;
+}
+
+.cytat p:nth-child(1){
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+.mainItem h4 {
+    text-transform: uppercase;
+    color: var(--maincolor);
+}
+
+.mainItem.tags a {
+    background-color: #ccc;
+    text-decoration: none;
+    color: black;
+    padding: 0.6rem 1rem;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0.2rem 0.1rem;
+}
+
+.mainItem ul {
+    margin: 0;
+    padding: 0;
+}
+.mainItem ul li {
+    list-style: none;
+    padding: 1rem 0;
+    position: relative;
+}
+.mainItem ul li:not(:last-child):after {
+    content: '';
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.mainItem.recentComments ul li span {
+    color: var(--maincolor);
+}
+
+.mainItem.recentComments ul li span::before {
+    content: '\2014';
+    color: black;
+    padding-right: 0.3rem;
+}
+
+.mainItem.recentComments ul li a {
+    color: #888;
+    text-decoration: none;
+    display: block;
+    padding-top: 0.3rem;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.mainItem.categories a {
+    text-decoration: none;
+    color: #888;
+}
+
+
+.mainItem.categories ul li::before {
+    content: '\27B2';
+    padding-right: 0.3rem;
+}
+
+
+/* -------- /Widgets ---------- */
+
+@media screen and (max-width:800px) {
+    /* -------- Menu ---------- */
+
+    header > hr {
+        display: none;
+    }
+    .topnav a:not(:first-child){
+        display: none; 
+    }
+    .topnav a.mobMenuIcon {
+        display: block;
+        float: right;
+    }
+    .topnav {
+        text-align: left;
+    }
+    .topnav.responsive{
+        position: relative;
+
+    }
+    .topnav.responsive a.mobMenuIcon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a{
+        display: block;
+        text-align: left;
+        float: none;
+    }
+
+
+    /* -------- /Menu ---------- */
+    /* -------- Banner ---------- */
+
+    .baner h1 {
+        font-size: 10vw;
+
+    }
+    .baner h3 {
+        font-size: 7vw;
+
+    }
+    /* -------- /Banner ---------- */
+
+    /* --------- Main --------- */
+    main .container {
+        flex-direction: column;
+    }
+
+    main .container #mainColumn {
+        flex: auto;
+    }
+    
+    main .container #mainAside {
+        flex: auto;
+    }
+
+    /* --------- /Main --------- */
+
+    /* -------- Article ---------- */
+    .entry-footer{
+        flex-direction: column-reverse;
+        row-gap: 1rem;
+    }
+    /* -------- /Article ---------- */
+}
+
+
+
