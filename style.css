@@ -101,6 +101,7 @@ main {
 
 main .container {
     display: flex;
+    column-gap: 1rem;
 }
 
 main .container #mainColumn {
@@ -114,7 +115,7 @@ main .container #mainAside {
 .mainItem{
     background: white;
     padding: 1rem;
-    margin: 1rem 0.5rem;
+    margin: 1rem 0;
 }
 
 .fa-my-class {
@@ -266,6 +267,97 @@ article p {
 
 /* -------- /Widgets ---------- */
 
+/* --------featured--------- */
+#featured {
+    background: var(--backgroundcolor);
+    padding-bottom: 1rem;   
+}
+
+#featured .container {
+    background: white;
+    padding: 1rem;
+    /* WLICZANIE PADDINGU DO MAX WIDTH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    box-sizing: border-box;
+}
+
+
+#featured .container .featuredItems {
+    display: flex;
+    column-gap: 1rem;
+    
+}
+
+.featuredItem img {
+    width: 100%;
+    /* EFEKT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    transition: transform 0.6s ease;
+}
+
+.featuredItem div {
+    /* EFEKT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    overflow: hidden;
+}
+
+
+.featuredItem img:hover {
+    /* EFEKT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    transform: scale(1.5);
+    overflow: hidden;
+}
+
+.featuredItem h3 {
+    color: var(--maincolor);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.featuredItem h4 {
+    color: #aaaa;
+    font-weight: 400;
+}
+
+.featuredItem h4::before {
+    content: '\2014';
+    padding-right: 0.2rem;
+}
+
+#featured h2{
+    text-transform: uppercase;
+    color: var(--maincolor);
+    font-size: 1rem;
+}
+
+/* --------/featured--------- */
+
+/* --------footer--------- */
+footer {
+    background: black;
+    padding: 2rem 0;
+    color: white;
+    text-align: center;
+}
+
+footer .menu a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer .social {
+    margin: 1.5rem 0;
+}
+
+footer .social a {
+    color: #ccc;
+    letter-spacing: 1rem;
+}
+
+footer .copyright a {
+    color: var(--maincolor);
+    text-decoration: none;
+}
+/* --------/footer--------- */
+
 @media screen and (max-width:800px) {
     /* -------- Menu ---------- */
 
@@ -332,6 +424,19 @@ article p {
         row-gap: 1rem;
     }
     /* -------- /Article ---------- */
+
+    /* --------featured--------- */
+    #featured .container .featuredItems {
+        flex-wrap: wrap;
+        column-gap: 1rem;
+        justify-content: center;
+    }
+
+    .featuredItem {
+        max-width: 220px;
+    }
+  
+        /* --------/featured--------- */
 }
 
 
